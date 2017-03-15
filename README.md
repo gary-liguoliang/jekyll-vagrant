@@ -9,8 +9,7 @@ Vagrant will create a Ubuntu 14 instance and install Ruby 2.3.1 with Jekyll.
  1. `git clone git@github.com:guoliang-dev/jekyll-vagrant.git` 
  2. `cd jekyll-vagrant`
  3. `vagrant up`
- 4. ssh to localhost:2222 with vagrant/vagrant
- 5. inside the box: 
+ 4. ssh to localhost:2222 with vagrant/vagrant and execute: 
  
     ```bash 
     cd /vagrant  # /vagrant is the share folder pointing to folder jekyll-vagrant in the host. 
@@ -18,7 +17,7 @@ Vagrant will create a Ubuntu 14 instance and install Ruby 2.3.1 with Jekyll.
     cd my-awesome-site
     bundle exec jekyll serve --host 0.0.0.0
     ```
- 6. access your jekyll web app from host: http://127.0.0.1:8040
+ 5. access your jekyll web app from host: http://127.0.0.1:8040
 
 the jekyll project `my-awesome-site` can be found in the `jekyll-vagrant\my-awesome-site` on your host. 
 
